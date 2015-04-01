@@ -1,35 +1,58 @@
 <html>
 <head>
   <script src="jquery-1.11.2.min.js"></script>
-  <title>
-  JacksonML's Repository
-  </title>
+  <title>Jackson Lucas's Projects</title>
   <style>
     body{
-      font-family:arial;
+      font-family: 'Open Sans', sans-serif;
     }
     .pageWrapper{
-      width:600px;
-      margin:auto;
+      margin:0;
     }
     .page{
-      background-color:#EEE;
+	  padding-left:2px;
+	  background-image: url(code.jpg);
+	  background-size: 100%;
     }
     .head{
-      background-color:#323232;
-      box-shadow 0 0 2px #000;
-      width:590px;
-    }
+	  text-align:center;
+	  font-size:40;
+	  color: White;
+	}
+	.loadCover{
+		font-size:40;
+		width:100vw;
+		height:100vh;
+		text-align:center;
+		padding-top:20vh;
+		position: fixed;
+		background-color:White;
+		font-family:Arial;
+	}
+	#aboutMe{
+		text-align:center;
+		color:White;
+		font-size: 30;
+		width: 75vw;
+		margin:auto;
+	}
   </style>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script>
+	$(window).load(function(){
+		$(".loadCover").delay(250).fadeOut(750)
+	});
+  </script>
+  
 </head>
 <body class="pagewrapper">
-  <div class="head">
-    <h1>JacksonML's Repository</h1>
-    <a href="index.html">Home</a>
-  </div>
+<div class="loadCover">
+<h1>Loading...</h1></div>
   <div class="page">
-    <h2>About Me</h2>
-    <p>My name is Jackson and I'm a 15 year old programmer. I know CSS, HTML, JavaScript, and Java. I am currently in the 9th grade and am planning on becoming a computer programmer in the future as a career.</p>
+	<div class="head">
+		<h1>Jackson Lucas</h1>
+	</div>
+    <p id="aboutMe">My name is Jackson and I'm a 15 year old programmer. I know CSS, HTML, JavaScript, PHP, C++, C#, C, and Java. I am currently in the 9th grade and am planning on becoming a computer programmer in the future as a career.</p>
     <h2>My GitHub Repositories</h2>
     <p>You can check out my github repositories at my <a href="github.com/JacksonML">GitHub page</a>.</p>
   </div>
