@@ -11,7 +11,7 @@
     }
     .page{
 	  
-	  background-image: url(code.jpg);
+	  background-image: url(images/code.jpg);
 	  background-size: 100%;
 	  padding-top:1vh;
     }
@@ -47,12 +47,34 @@
 	}
 	table{
 		border:0px;
+		margin:auto;
 	}
 	.WorkHTML5{
 		background-color:#FF8533;
-		width:15vw;
+		width:40vw;
 		text-align:center;
 	}
+.shape {
+  text-shadow: rgb(217, 113, 43) 1px 1px,
+    rgb(217, 113, 43) 2px 2px,
+    rgb(217, 113, 43) 3px 3px,
+    rgb(217, 113, 43) 4px 4px,
+    rgb(217, 113, 43) 5px 5px,
+    rgb(221, 115, 43) 6px 6px,
+    rgb(225, 117, 44) 7px 7px,
+    rgb(229, 119, 45) 8px 8px,
+    rgb(233, 121, 46) 9px 9px,
+    rgb(238, 124, 47) 10px 10px,
+    rgb(242, 126, 48) 11px 11px,
+    rgb(246, 128, 49) 12px 12px,
+    rgb(250, 130, 50) 13px 13px,
+    rgb(255, 133, 51) 14px 14px;
+   background-color: rgb(255, 133, 51);
+  height: 100%;
+  width: 100%;
+  font-size: 75px;
+  text-align: center;
+}
   </style>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <script>
@@ -60,7 +82,15 @@
 		$(".loadCover").delay(250).fadeOut(750)
 	});
   </script>
-  
+  <!--script>
+	$(document).ready(function(){
+		$(".WorkHTML5").hover(function(){
+			$(this).animate({"width":"60vw"}, 1000);
+		},function(){
+			$(this).animate({"width":"15vw"}, 1000)
+		});
+	});
+  </script-->
 </head>
 <body class="pagewrapper">
 <div class="loadCover">
@@ -76,8 +106,37 @@
 	<table>
 	<tr>
 	<td class="WorkHTML5">
-		<img src="HTML5_Badge.png" alt="HTML5 Logo" style="width:10vw;padding-top:3px;">
-		<p>HTML5</p>
+		<img src="images/HTML5_Badge.png" alt="HTML5 Logo" style="width:10vw;padding-top:9px;float:left">
+		<div class="shape" style="padding-top:15px;color:White">
+		5imple
+		</div>
+		<p style="text-align:justify;padding:8px;font-size:16">5imple is a javascript API that eases the development of HTML5's canvas element. It allows you to be more productive and efficient when writing your code, getting more done quicker. Take this code for example, the following is what you would write to draw three circles onto your canvas.</p>
+		<PRE style="text-align:left;padding:5px;font-size:16;color:#111111;background-color:#FF9F4A" id="before5imple">
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.arc(100,100,100,0,2*Math.PI);
+ctx.fillStyle = "#00CCFF"
+ctx.fill();
+ctx.beginPath();
+ctx.arc(100,100,50,0,2*Math.PI);
+ctx.fillStyle = "#0011FF"
+ctx.fill();
+ctx.beginPath();
+ctx.arc(100,100,25,0,2*Math.PI);
+ctx.fillStyle = "#FFCC00"
+ctx.fill();
+</PRE>
+	<p style="text-align:justify;padding:8px;font-size:16">This can't be an efficient way to write code for the canvas, so lets change it up. Here's the code using 5imple.</p>
+<PRE style="text-align:left;padding:5px;font-size:16;color:#111111;background-color:#FF9F4A" id="after5imple">
+useCanvas("myCanvas");
+myCircle = new Circle(100,100,100,"#00CCFF","myCircle");
+myCircle2 = new Circle(100,100,50,"#0011FF","myCircle2");
+myCircle3 = new Circle(100,100,25,"#FFCC00","myCircle3");
+updateCanvas();
+</PRE>
+	<p style="text-align:justify;padding:8px;font-size:16">Hey look! You can actually read it! Plus, your circles and such are now objects, so you can easily change their position without having dozens of x and y variables in your script. updateCanvas() renders the whole canvas for you, so you don't have to redraw the arc and set the color and fill it yourself. You tell it to update and it goes through all of your objects and renders them!
 	</td>
 	</tr>
 	</table>
