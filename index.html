@@ -10,15 +10,19 @@
       margin:0;
     }
     .page{
-	  padding-left:2px;
+	  
 	  background-image: url(code.jpg);
 	  background-size: 100%;
+	  padding-top:1vh;
     }
     .head{
 	  text-align:center;
 	  font-size:40;
 	  color: White;
+	  background:rgba(0,0,0,.55);
+	  padding-bottom:20px;
 	}
+	
 	.loadCover{
 		font-size:40;
 		width:100vw;
@@ -36,6 +40,19 @@
 		width: 75vw;
 		margin:auto;
 	}
+	#titles{
+		color:White;
+		font-size:38;
+		text-align:center;
+	}
+	table{
+		border:0px;
+	}
+	.WorkHTML5{
+		background-color:#FF8533;
+		width:15vw;
+		text-align:center;
+	}
   </style>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <script>
@@ -47,12 +64,23 @@
 </head>
 <body class="pagewrapper">
 <div class="loadCover">
-<h1>Loading...</h1></div>
+<h1>Loading...</h1>
+<p style="font-size:30;width:50vw;margin:auto">Fonts and images may take some time to load depending on your connection.</div>
   <div class="page">
 	<div class="head">
 		<h1>Jackson Lucas</h1>
+		<p id="aboutMe">My name is Jackson and I'm a 15 year old self-taught programmer. I know CSS, HTML, JavaScript, PHP, C++, C#, C, Objective-C, and Java. I am currently in the 9th grade and am planning on becoming a computer programmer in the future as a career.</p>
 	</div>
-    <p id="aboutMe">My name is Jackson and I'm a 15 year old programmer. I know CSS, HTML, JavaScript, PHP, C++, C#, C, and Java. I am currently in the 9th grade and am planning on becoming a computer programmer in the future as a career.</p>
+
+	<h1 id="titles">Some work I've done</h1>
+	<table>
+	<tr>
+	<td class="WorkHTML5">
+		<img src="HTML5_Badge.png" alt="HTML5 Logo" style="width:10vw;padding-top:3px;">
+		<p>HTML5</p>
+	</td>
+	</tr>
+	</table>
     <h2>My GitHub Repositories</h2>
     <p>You can check out my github repositories at my <a href="github.com/JacksonML">GitHub page</a>.</p>
   </div>
