@@ -1,0 +1,104 @@
+body{font-family: 'Open Sans', sans-serif}
+table{border:0px;margin:auto}
+.pageWrapper{margin:0}
+.page{
+	background-image: url(images/code.jpg);
+	background-size: 100%;
+	padding-top:1vh
+}
+.head{
+	text-align:center;
+	font-size:40;
+	color: White;
+	background:rgba(0,0,0,.55);
+	padding-bottom:20px
+}
+
+.loadCover{
+	font-size:40;
+	width:100vw;
+	height:100vh;
+	text-align:center;
+	padding-top:20vh;
+	position: fixed;
+	background-color:White;
+	font-family:Arial
+}
+#aboutMe{
+	font-size: 30;
+	width: 75vw;
+	margin:auto
+}
+#titles{
+	color:White;
+	font-size:38;
+	text-align:center
+}
+.WorkHTML5{
+	background-color:#FF8533;
+	width:40vw;
+	text-align:center
+}
+.construction{
+	float:right;
+	width:300px;
+	color:White;
+	padding:10px;
+	padding-right:14px;
+	background-color: rgb(255,125,5);
+	position:fixed;
+	border-radius:5px;
+	right:-6px;
+	top:15vh;
+	box-shadow: 0 0 10px #000000
+}
+.constructionHide{
+	position:fixed;
+	border:1px solid rgb(240,118,4);
+	background-color: rgb(245,120,5);
+	padding:5px;
+	border-radius:10px
+}
+.WorkGitHub{
+	background-color: #FFFFFF;
+	width:80vw;
+	text-align:center;
+	margin:auto;
+	radius:8px;
+	padding:1px
+}
+/* Currently Working On This
+.work{
+	background-color:#44D044;
+	border: 2px solid #228022
+}*/
+#footer{
+	background-color:rgba(0,0,0,0.5);
+	color:White;
+	padding:5px;
+	font-size:14px;
+	margin-bottom:0
+}
+	.shape {
+	text-shadow: rgb(217, 113, 43) 1px 1px,
+	rgb(217, 113, 43) 2px 2px,
+	rgb(217, 113, 43) 3px 3px,
+	rgb(217, 113, 43) 4px 4px,
+	rgb(217, 113, 43) 5px 5px,
+	rgb(221, 115, 43) 6px 6px,
+	rgb(225, 117, 44) 7px 7px,
+	rgb(229, 119, 45) 8px 8px,
+	rgb(233, 121, 46) 9px 9px,
+	rgb(238, 124, 47) 10px 10px,
+	rgb(242, 126, 48) 11px 11px,
+	rgb(246, 128, 49) 12px 12px,
+	rgb(250, 130, 50) 13px 13px,
+	rgb(255, 133, 51) 14px 14px;
+	background-color: rgb(255, 133, 51);
+	height: 100%;
+	width: 100%;
+	font-size: 75px;
+	text-align: center;
+	padding-top:15px;
+	color:White
+}

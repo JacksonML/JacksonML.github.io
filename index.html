@@ -1,115 +1,46 @@
 <html>
 <head>
-  <script src="jquery-1.11.2.min.js"></script>
-  <title>Jackson Lucas's Projects</title>
-  <style>
-    body{
-      font-family: 'Open Sans', sans-serif;
-    }
-    .pageWrapper{
-      margin:0;
-    }
-    .page{
-	  
-	  background-image: url(images/code.jpg);
-	  background-size: 100%;
-	  padding-top:1vh;
-    }
-    .head{
-	  text-align:center;
-	  font-size:40;
-	  color: White;
-	  background:rgba(0,0,0,.55);
-	  padding-bottom:20px;
-	}
-	
-	.loadCover{
-		font-size:40;
-		width:100vw;
-		height:100vh;
-		text-align:center;
-		padding-top:20vh;
-		position: fixed;
-		background-color:White;
-		font-family:Arial;
-	}
-	#aboutMe{
-		text-align:center;
-		color:White;
-		font-size: 30;
-		width: 75vw;
-		margin:auto;
-	}
-	#titles{
-		color:White;
-		font-size:38;
-		text-align:center;
-	}
-	table{
-		border:0px;
-		margin:auto;
-	}
-	.WorkHTML5{
-		background-color:#FF8533;
-		width:40vw;
-		text-align:center;
-	}
-.shape {
-  text-shadow: rgb(217, 113, 43) 1px 1px,
-    rgb(217, 113, 43) 2px 2px,
-    rgb(217, 113, 43) 3px 3px,
-    rgb(217, 113, 43) 4px 4px,
-    rgb(217, 113, 43) 5px 5px,
-    rgb(221, 115, 43) 6px 6px,
-    rgb(225, 117, 44) 7px 7px,
-    rgb(229, 119, 45) 8px 8px,
-    rgb(233, 121, 46) 9px 9px,
-    rgb(238, 124, 47) 10px 10px,
-    rgb(242, 126, 48) 11px 11px,
-    rgb(246, 128, 49) 12px 12px,
-    rgb(250, 130, 50) 13px 13px,
-    rgb(255, 133, 51) 14px 14px;
-   background-color: rgb(255, 133, 51);
-  height: 100%;
-  width: 100%;
-  font-size: 75px;
-  text-align: center;
-}
-  </style>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <script>
+	<script src="jquery-1.11.2.min.js"></script>
+	<title>Jackson Lucas's Projects</title>
+	<link href="style.css" rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script>
 	$(window).load(function(){
 		$(".loadCover").delay(250).fadeOut(750)
 	});
-  </script>
-  <!--script>
+	</script>
+	<script>
 	$(document).ready(function(){
-		$(".WorkHTML5").hover(function(){
-			$(this).animate({"width":"60vw"}, 1000);
-		},function(){
-			$(this).animate({"width":"15vw"}, 1000)
+		$(".constructionHide").click(function(){
+			$(".construction").toggle(500);
 		});
 	});
-  </script-->
+	</script>
 </head>
 <body class="pagewrapper">
 <div class="loadCover">
 <h1>Loading...</h1>
-<p style="font-size:30;width:50vw;margin:auto">Fonts and images may take some time to load depending on your connection.</div>
-  <div class="page">
+<p style="font-size:30;width:50vw;margin:auto">Fonts and images may take some time to load depending on your connection.</p></div>
+<div class="page">
+	<div class="construction">
+		<div class="constructionHide">X</div>
+		<div class="constructionContent">
+		<img src="images/vlc.png" alt="Under Construction" style="float:left">
+		<h1>Caution</h1>
+		<p>This website is currently under construction, but will remain open for viewing. Thank you for understanding, and sorry for any inconvenience</p>
+		</div>
+	</div>
 	<div class="head">
-		<h1>Jackson Lucas</h1>
+		<h1 style="margin-bottom:15px;margin-top:25px">Jackson Lucas</h1>
 		<p id="aboutMe">My name is Jackson and I'm a 15 year old self-taught programmer. I know CSS, HTML, JavaScript, PHP, C++, C#, C, Objective-C, and Java. I am currently in the 9th grade and am planning on becoming a computer programmer in the future as a career.</p>
 	</div>
-
+	<div class="work">
 	<h1 id="titles">Some work I've done</h1>
 	<table>
 	<tr>
 	<td class="WorkHTML5">
 		<img src="images/HTML5_Badge.png" alt="HTML5 Logo" style="width:10vw;padding-top:9px;float:left">
-		<div class="shape" style="padding-top:15px;color:White">
-		5imple
-		</div>
+		<div class="shape">5imple</div>
 		<p style="text-align:justify;padding:8px;font-size:16">5imple is a javascript API that eases the development of HTML5's canvas element. It allows you to be more productive and efficient when writing your code, getting more done quicker. Take this code for example, the following is what you would write to draw three circles onto your canvas.</p>
 		<PRE style="text-align:left;padding:5px;font-size:16;color:#111111;background-color:#FF9F4A" id="before5imple">
 var c = document.getElementById("myCanvas");
@@ -117,19 +48,19 @@ var ctx = c.getContext("2d");
 
 ctx.beginPath();
 ctx.arc(100,100,100,0,2*Math.PI);
-ctx.fillStyle = "#00CCFF"
+ctx.fillStyle = "#00CCFF";
 ctx.fill();
 ctx.beginPath();
 ctx.arc(100,100,50,0,2*Math.PI);
-ctx.fillStyle = "#0011FF"
+ctx.fillStyle = "#0011FF";
 ctx.fill();
 ctx.beginPath();
 ctx.arc(100,100,25,0,2*Math.PI);
-ctx.fillStyle = "#FFCC00"
+ctx.fillStyle = "#FFCC00";
 ctx.fill();
 </PRE>
 	<p style="text-align:justify;padding:8px;font-size:16">This can't be an efficient way to write code for the canvas, so lets change it up. Here's the code using 5imple.</p>
-<PRE style="text-align:left;padding:5px;font-size:16;color:#111111;background-color:#FF9F4A" id="after5imple">
+	<PRE style="text-align:left;padding:5px;font-size:16;color:#111111;background-color:#FF9F4A" id="after5imple">
 useCanvas("myCanvas");
 myCircle = new Circle(100,100,100,"#00CCFF","myCircle");
 myCircle2 = new Circle(100,100,50,"#0011FF","myCircle2");
@@ -140,8 +71,11 @@ updateCanvas();
 	</td>
 	</tr>
 	</table>
-    <h2>My GitHub Repositories</h2>
-    <p>You can check out my github repositories at my <a href="github.com/JacksonML">GitHub page</a>.</p>
-  </div>
+	<div class="WorkGitHub">
+		<h2 style="margin:10px">You can check out my GitHub repositories at my <span style="border-radius:5px;background-color:#EDEDED;padding:5px;border:1px solid #DCDCDC""><a href="github.com/JacksonML">GitHub page</a></span>.</h2>
+	</div>
+	</div>
+	<p align="center" id="footer">If you would like to contact me please email me at jacksonmlpro@gmail.com, thanks!</p>
+</div>
 </body>
 </html>
